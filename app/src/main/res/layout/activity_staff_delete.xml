@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".StaffDeleteActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp">
+
+        <TextView
+            android:id="@+id/staff_label"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="37dp"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Сотрудники"
+            android:textColor="#000000"
+            android:textSize="32sp" />
+
+        <ImageButton
+            android:id="@+id/button_settings_out"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="end"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="49dp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_settings_2" />
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="end"
+            android:layout_marginTop="37dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_back" />
+    </GridLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/staffList"
+        android:layout_marginHorizontal="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="665dp" />
+
+</LinearLayout>
